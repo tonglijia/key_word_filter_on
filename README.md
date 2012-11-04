@@ -18,10 +18,12 @@ Or install it yourself as:
 
     rails g key_word_filter_on:migration
 
+User:
+
 
 ## Usage
 
- FilterKeyWordOn.handle_word("content", "*")
+ content = FilterKeyWordOn.handle_word("content", "*")
 
 
 
