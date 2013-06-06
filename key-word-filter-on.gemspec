@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = KeyWordFilterOn::VERSION
 
-  s.add_dependency "activerecord", ">= 3.1"
+  gem.add_dependency "activerecord", ">= 3.1"
 
   
 end
