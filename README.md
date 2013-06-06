@@ -8,10 +8,6 @@ Add this line to your application's Gemfile:
 
     gem 'key-word-filter-on'
 
-And then execute:
-
-    $ bundle
-
 Or install it yourself as:
 
     $ gem install key-word-filter-on
@@ -23,8 +19,16 @@ User:
 
 ## Usage
 
-
  content = FilterKeyWordOn.handle_word("content", "*")
+ 
+ or
+
+ 	alias :origin_save :save 
+
+	def save
+		self.content = FilterKeyWordOn.handle_word(comment.content, "*")
+		self.origin_save
+	end
 
 
 

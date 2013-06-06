@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["wtuyuupe@163.com"]
   gem.description   = %q{Filter sensitive keyword method.}
   gem.summary       = %q{Filtering illegal characters and sensitive words.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/tonglijia/key_word_filter_on"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "key-word-filter-on"
   gem.require_paths = ["lib"]
   gem.version       = KeyWordFilterOn::VERSION
+
+  s.add_dependency "activerecord", ">= 3.1"
+
+  
 end
