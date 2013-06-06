@@ -19,14 +19,14 @@ User:
 
 ## Usage
 
- content = FilterKeyWordOn.handle_word("content", "*")
+ 	content = FilterKeyWordOn.handle_word("content", "*")
  
  or
 
  	alias :origin_save :save 
 
 	def save
-		self.content = FilterKeyWordOn.handle_word(comment.content, "*")
+		self.content = FilterKeyWordOn.handle_word(self.content, "*")
 		self.origin_save
 	end
 
