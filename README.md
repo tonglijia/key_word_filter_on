@@ -1,26 +1,25 @@
 # Key::Word::Filter::On
 
-TODO: Write a gem description
+## Getting started   
 
-## Installation
+```ruby
 
-Add this line to your application's Gemfile:
+	gem 'key-word-filter-on'
 
-    gem 'key-word-filter-on'
+```
 
-Or install it yourself as:
+```ruby
 
-    $ gem install key-word-filter-on
+	rails g key_word_filter_on:migration
 
-    rails g key_word_filter_on:migration
+```
 
-User:
+Usage
 
+```ruby
 
-## Usage
+	content = FilterKeyWordOn.handle_word("content", "*")
 
- 	content = FilterKeyWordOn.handle_word("content", "*")
- 
  or
 
  	alias :origin_save :save 
@@ -30,8 +29,7 @@ User:
 		self.origin_save
 	end
 
+```
 
 
-
-## Contributing
 
